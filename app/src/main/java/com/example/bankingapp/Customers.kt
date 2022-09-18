@@ -31,10 +31,9 @@ class Customers : AppCompatActivity(){
                 intent.putExtra("name",customersList[position].name)
                 intent.putExtra("phone",customersList[position].phone)
                 intent.putExtra("balance",customersList[position].balance)
-                intent.putExtra("email",customersList[position].email)
                 intent.putExtra("accNo",customersList[position].AccountNo)
-                intent.putExtra("ifsc",customersList[position].ifsc)
                 startActivity(intent)
+                viewCustomer()
             }
         })
         rv.setHasFixedSize(true)
